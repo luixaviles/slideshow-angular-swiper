@@ -1,0 +1,16 @@
+<swiper
+  [slidesPerView]="1"
+  [navigation]="true"
+  [pagination]="{ type: 'fraction' }"
+  [keyboard]="{
+    enabled: true
+  }"
+  [virtual]="true"
+  class="my-swiper"
+>
+  <ng-template swiperSlide *ngFor="let slide of slides$ | async; index as i">
+    <div class="swiper-slide-container">
+      {{ slide }}
+    </div>
+  </ng-template>
+</swiper>

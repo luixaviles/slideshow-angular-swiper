@@ -1,0 +1,23 @@
+// @import '~swiper/swiper.min.css';
+// @import '~swiper/modules/navigation/navigation.min.css';
+// @import '~swiper/modules/pagination/pagination.min.css';
+
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+
+.my-swiper {
+    height: 100%;
+}
+
+.swiper-slide-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  height: 100%;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 20px;
+}
